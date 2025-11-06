@@ -16,9 +16,8 @@ This exercise evaluates your core **data-engineering** skills:
 
 - **Python ≥ 3.8** – all ETL / data-processing code
 - **MySQL 8** – the target relational database
-- **Lightweight helper libraries only** (e.g. `pandas`, `mysql-connector-python`).  
-  List every dependency in **`requirements.txt`** and justify anything unusual.
-- **No ORMs / auto-migration tools** – write plain SQL by hand.
+- **Pydantic** – For data validation
+- List every dependency in **`requirements.txt`** and justify selection of libraries in the submission notes.
 
 ---
 
@@ -63,25 +62,18 @@ For MySQL Docker image reference:
 
 - **Deliverable:**
   - Write necessary python and sql scripts
-  - Place your scripts in `sql/` and `scripts/`
+  - Place your scripts in `src/`
   - The scripts should take the initial json to your final, normalized schema when executed
   - Clearly document how to run your script, dependencies, and how it integrates with your database.
-
-**Tech Stack:**
-
-- Python (include a `requirements.txt`)
-  Use **MySQL** and SQL for all database work
-- You may use any CLI or GUI for development, but the final changes must be submitted as python/ SQL scripts
-- **Do not** use ORM migrations—write all SQL by hand
 
 ---
 
 ## Submission Guidelines
 
 - Edit the section to the bottom of this README with your solutions and instructions for each section at the bottom.
-- Place all scripts/code in their respective folders (`sql/`, `scripts/`, etc.)
 - Ensure all steps are fully **reproducible** using your documentation
-- Create a new private repo and invite the reviewer https://github.com/mantreshjain
+- DO NOT MAKE THE REPOSITORY PUBLIC. ANY CANDIDATE WHO DOES IT WILL BE AUTO REJECTED.
+- Create a new private repo and invite the reviewer https://github.com/mantreshjain and https://github.com/siddhuorama
 
 ---
 
@@ -89,13 +81,4 @@ For MySQL Docker image reference:
 
 ## Solutions and Instructions (Filed by Candidate)
 
-**Document your database design and solution here:**
-
-- Explain your schema and any design decisions
-- Give clear instructions on how to run and test your script
-
-**Document your ETL logic here:**
-
-- Outline your approach and design
-- Provide instructions and code snippets for running the ETL
-- List any requirements
+**Document your solution here:**
