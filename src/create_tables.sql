@@ -2,8 +2,8 @@
 USE home_db;
 
 -- Drop existing tables if you want a clean slate
-DROP TABLE IF EXISTS rehab_estimates;
-DROP TABLE IF EXISTS hoa_charges;
+DROP TABLE IF EXISTS rehab;
+DROP TABLE IF EXISTS hoa;
 DROP TABLE IF EXISTS valuations;
 DROP TABLE IF EXISTS taxes;
 DROP TABLE IF EXISTS leads;
