@@ -82,3 +82,42 @@ For MySQL Docker image reference:
 ## Solutions and Instructions (Filed by Candidate)
 
 **Document your solution here:**
+
+
+## 1 Clone the repo
+
+```
+git clone https://github.com/Sg108/data_engineer_assessment_Shivam_Gupta.git
+```
+## 2 Create and activate a virtual environment
+
+```
+python -m venv .venv
+# Linux / macOS
+source .venv/bin/activate
+# Windows
+# .\.venv\Scripts\activate
+```
+
+## 3 Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+
+## 3 Start the MySQL database in Docker:**
+
+```
+docker-compose -f docker-compose.initial.yml up --build -d
+```
+## 4 Run the SQL script to Create the Tables in the database:**
+
+```
+cd src
+docker exec -i mysql_ctn sh -c 'mysql -u db_user -p"$MYSQL_PASSWORD" home_db' < create_tables.sql
+```
+** 5 Run the ETL python script to Load data into the respective tables**
+```
+python3 etl.py
+```
