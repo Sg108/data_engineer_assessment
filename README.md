@@ -79,7 +79,7 @@ For MySQL Docker image reference:
 
 **Good luck! We look forward to your submission.**
 
-## Solutions and Instructions (Filed by Candidate)
+## Solutions and Instructions (Filed by Shivam Gupta)
 
 **Document your solution here:**
 
