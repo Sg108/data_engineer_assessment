@@ -119,5 +119,7 @@ docker exec -i mysql_ctn sh -c 'mysql -u db_user -p"$MYSQL_PASSWORD" home_db' < 
 ```
 ## 5 Run the ETL python script to Load data into the respective tables
 ```
+python etl.py
+or
 python3 etl.py
 ```
