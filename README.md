@@ -106,18 +106,18 @@ pip install -r requirements.txt
 ```
 
 
-** 2 Start the MySQL database in Docker:**
+## 3 Start the MySQL database in Docker:**
 
 ```
 docker-compose -f docker-compose.initial.yml up --build -d
 ```
-** 3 Run the SQL script to Create the Tables in the database:**
+## 4 Run the SQL script to Create the Tables in the database:**
 
 ```
 cd src
 docker exec -i mysql_ctn sh -c 'mysql -u db_user -p"$MYSQL_PASSWORD" home_db' < create_tables.sql
 ```
-** 4 Run the ETL python script to Load data into the respective tables**
+** 5 Run the ETL python script to Load data into the respective tables**
 ```
 python3 etl.py
 ```
